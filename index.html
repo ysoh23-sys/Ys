@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YSOH | 행복부자연구소</title>
+<style>
+:root { --blue:#1764d8; --dark:#12396d; --light:#eaf3ff; }
+* { box-sizing:border-box; }
+body {
+  margin:0; background:#f3f7ff; color:#183452;
+  font-family:"Noto Sans KR",Arial,sans-serif; line-height:1.7;
+}
+.container {
+  max-width:480px; margin:auto; min-height:100vh;
+  background:white; box-shadow:0 0 30px #dbe6f5;
+}
+header {
+  padding:55px 24px 45px; text-align:center; color:white;
+  background:linear-gradient(145deg,#123e83,#2585f5);
+  border-radius:0 0 36px 36px;
+}
+.logo {
+  width:90px; height:90px; margin:0 auto 18px;
+  border:2px solid #ffffff90; border-radius:50%;
+  display:grid; place-items:center; font-size:25px; font-weight:bold;
+}
+h1 { font-size:38px; margin:0; letter-spacing:2px; }
+.subtitle { font-size:22px; margin:8px 0; font-weight:bold; }
+.slogan { margin-top:22px; font-size:20px; font-weight:600; }
+main { padding:32px 22px; }
+.section-title {
+  text-align:center; color:var(--dark);
+  font-size:27px; margin:0 0 24px;
+}
+.card {
+  background:var(--light); border:1px solid #d3e5ff;
+  border-left:5px solid var(--blue);
+  border-radius:22px; padding:24px; margin-bottom:20px;
+}
+.number {
+  display:inline-block; background:var(--blue); color:white;
+  padding:3px 14px; border-radius:20px;
+  font-size:16px; font-weight:bold;
+}
+h2 { color:var(--dark); font-size:23px; margin:12px 0; }
+p { font-size:18px; margin:10px 0; }
+ul { padding-left:23px; font-size:18px; }
+li { margin-bottom:8px; }
+.action {
+  display:inline-block; margin-top:12px; color:var(--blue);
+  font-size:18px; font-weight:bold; text-decoration:none;
+}
+.contact { padding:30px 22px 45px; text-align:center; }
+button {
+  width:100%; padding:19px; border:none; border-radius:16px;
+  background:var(--blue); color:white; font-size:23px;
+  font-weight:bold; cursor:pointer;
+  box-shadow:0 6px 16px #1764d833;
+}
+button:active { transform:scale(.98); }
+footer {
+  text-align:center; background:#eef5ff;
+  padding:22px; font-size:15px; color:#57708d;
+}
+@media(max-width:360px) {
+  h1 { font-size:34px; }
+  h2 { font-size:21px; }
+  p,ul { font-size:17px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">YSOH</div>
+  <h1>YSOH</h1>
+  <p class="subtitle">행복부자연구소 대표이사</p>
+  <p>THE벤처캐피탈 대표이사</p>
+  <p>전 경기대학교 교수 · 『행복부자학』 저자</p>
+  <p class="slogan">"돈의 부자를 넘어<br>삶의 부자로"</p>
+</header>
+
+<main>
+<h2 class="section-title">주요 활동 및 사업</h2>
+
+<section class="card">
+  <span class="number">01</span>
+  <h2>행복부자연구소 카페</h2>
+  <p>행복한 삶과 건강한 부를 함께 연구하는 지식과 소통의 공간입니다.</p>
+  <p>가치투자, 경제 이야기, 인생의 지혜와 행복부자 철학을 나눕니다.</p>
+  <a class="action" href="#contact">카페 참여 문의 →</a>
+</section>
+
+<section class="card">
+  <span class="number">02</span>
+  <h2>한·중 대학생 가치투자대회</h2>
+  <p><strong>대한민국 전국대학생가치투자대회</strong></p>
+  <p>대학생들이 기업의 본질적 가치를 분석하고 장기투자 철학을 배우는 대회입니다.</p>
+  <p><strong>중국 대학생 가치투자대회</strong></p>
+  <p>중국 대학생들의 가치투자 교육과 교류를 위한 대회 및 협력 활동을 소개합니다.</p>
+  <p>한국과 중국의 미래 투자 인재들이 함께 성장하는 것을 지향합니다.</p>
+</section>
+
+<section class="card">
+  <span class="number">03</span>
+  <h2>가치투자대회 참여 방법</h2>
+  <ul>
+    <li>한국 또는 중국 대회 공고 확인</li>
+    <li>참가 자격 및 신청 일정 확인</li>
+    <li>개인 또는 팀 단위 참가 신청</li>
+    <li>기업 분석 및 가치평가 보고서 작성</li>
+    <li>심사와 발표 과정 참여</li>
+  </ul>
+  <p>국가별 대회 일정과 참가 조건은 각 공식 모집 공고를 기준으로 합니다.</p>
+  <a class="action" href="#contact">대회 참가 문의 →</a>
+</section>
+</main>
+
+<section class="contact" id="contact">
+  <h2>함께 행복한 미래를 만듭니다</h2>
+  <p>행복부자연구소 · 한중 가치투자대회</p>
+  <p>연구소 활동 및 대회 참여 문의를 환영합니다.</p>
+  <button onclick="contact()">☎ 문의하기</button>
+  <p><a href="tel:01054249009" class="action">010-5424-9009</a></p>
+</section>
+
+<footer>
+  <strong>YSOH | 행복부자연구소 대표이사</strong>
+  <div>恒産恒心 · 행복과 가치투자의 동행</div>
+  <div>© 2026 YSOH. All Rights Reserved.</div>
+</footer>
+</div>
+
+<script>
+function contact() {
+  const choice = confirm(
+    "YSOH 행복부자연구소에 문의하시겠습니까?\n\n" +
+    "확인: 전화 연결\n취소: 문자 문의"
+  );
+  if (choice) {
+    window.location.href = "tel:01054249009";
+  } else {
+    const message = encodeURIComponent(
+      "안녕하세요. 행복부자연구소 및 가치투자대회 관련 문의드립니다."
+    );
+    window.location.href = "sms:01054249009?body=" + message;
+  }
+}
+</script>
+</body>
+</html>
